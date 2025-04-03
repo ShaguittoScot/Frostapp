@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "frost_",
+			"path": "../.."
+		},
+		{
+			"name": "assets",
+			"path": "../../../frost20/assets"
+		}
+	],
+	"settings": {}
+}
