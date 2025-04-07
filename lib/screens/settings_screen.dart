@@ -108,16 +108,18 @@ class _SettingsScreenState extends State<SettingsScreen> {
               // Estadísticas del usuario
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
+                /*
                 children: [
                   StatColumn(title: 'Recetas ', count: recipesCreated),
                   StatColumn(title: 'Ingredientes ', count: ingredientsScanned),
                   StatColumn(title: 'Favoritos ', count: favorites),
                 ],
+                */
               ),
               const SizedBox(height: 24),
 
               // Botón de editar perfil
-              ElevatedButton(
+              /*ElevatedButton(
                 onPressed: () {
                   // Lógica para editar perfil
                   ScaffoldMessenger.of(
@@ -129,9 +131,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   'Editar perfil',
                   style: TextStyle(color: Colors.white),
                 ),
-              ),
+              ),*/
               const SizedBox(height: 24),
-              Text(
+              /*Text(
                 "Ajustes",
                 style: TextStyle(
                   fontSize: 20,
@@ -156,7 +158,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 onTap: () {},
               ),
               const SizedBox(height: 24),
-
+*/
               // Botón para cerrar sesión
               ElevatedButton(
                 onPressed: () async {

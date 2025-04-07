@@ -3,7 +3,7 @@ import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:frost_/screens/home_screen.dart';
 import 'package:frost_/screens/login_screen.dart';
 import 'package:frost_/screens/settings_screen.dart';
-import 'package:frost_/screens/scaner_screen.dart';
+//import 'package:frost_/screens/scaner_screen.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 void main() async {
@@ -54,7 +54,7 @@ class _MainScreenState extends State<MainScreen> {
 
   static List<Widget> _widgetOptions = <Widget>[
     HomeScreen(),
-    ScannerScreen(),
+    //ScannerScreen(),
     SettingsScreen(),
   ];
 
@@ -86,7 +86,7 @@ class _MainScreenState extends State<MainScreen> {
             color: Colors.black, // Color de fondo
             borderRadius: BorderRadius.circular(10),
 
-          ), // Margen para destacar los bordes redondeados// Espaciado interno opcional
+          ), 
           child: ClipRRect(
             borderRadius: BorderRadius.circular(10),
 
@@ -109,7 +109,7 @@ class _MainScreenState extends State<MainScreen> {
               child: _buildSvgIcon('assets/icons/home.svg', 0),
             ),
           ),
-          BottomNavigationBarItem(
+          /*BottomNavigationBarItem(
             icon: _buildSvgIcon('assets/icons/scanner.svg', 1),
             label: 'Escáner',
             activeIcon: Container(
@@ -120,9 +120,9 @@ class _MainScreenState extends State<MainScreen> {
               ),
               child: _buildSvgIcon('assets/icons/scanner.svg', 1),
             ),
-          ),
+          ),*/
           BottomNavigationBarItem(
-            icon: _buildSvgIcon('assets/icons/settings.svg', 2),
+            icon: _buildSvgIcon('assets/icons/settings.svg', 1),
             label: 'Configuración',
             activeIcon: Container(
               padding: EdgeInsets.symmetric(vertical: 6, horizontal: 16),
@@ -130,7 +130,7 @@ class _MainScreenState extends State<MainScreen> {
                 color: Colors.blue.withOpacity(0.2),
                 borderRadius: BorderRadius.circular(12),
               ),
-              child: _buildSvgIcon('assets/icons/settings.svg', 2),
+              child: _buildSvgIcon('assets/icons/settings.svg', 1),
             ),
           ),
         ],
